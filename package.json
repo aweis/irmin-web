@@ -1,0 +1,40 @@
+{
+  "name": "irmin-web",
+  "version": "0.0.0",
+  "description": "Use irmin in a ReasonML project", 
+  "scripts": { 
+    "buildjs": "js_of_ocaml runtime/mutex.js #{self.target_dir}/default/executable/IrminTestApp.bc"
+  },
+  "esy": {
+    "build": "refmterr dune build -p irmin-web",
+    "release": {
+      "releasedBinaries": [
+        "IrminWeb.exe"
+      ]
+    }
+  },
+   "buildDirs": {
+    "executable": {
+      "require": ["irmin", "js_of_ocaml"],
+      "main": "IrminWeb",
+      "name": "IrminWeb.exe"
+    }
+  },
+  "dependencies": {
+    "@opam/dune": ">=1.6.0",
+    "@opam/base64": "*",
+    "@opam/cstruct": ">= 1.7.0",
+    "@opam/irmin": "*",
+    "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
+    "@opam/lwt": "*",
+    "@esy-ocaml/reason": "*",
+    "refmterr": "*",
+    "ocaml": "*",
+    "pesy": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*"
+  },
+  "resolutions": {
+  }
+}
