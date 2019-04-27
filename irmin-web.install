@@ -1,0 +1,11 @@
+lib: [
+  "/home/aweis/irmin-web/_esy/default/store/b/irmin_web-74307f7a/install/default/lib/irmin-web/META" {"META"}
+  "/home/aweis/irmin-web/_esy/default/store/b/irmin_web-74307f7a/install/default/lib/irmin-web/dune-package" {"dune-package"}
+  "/home/aweis/irmin-web/_esy/default/store/b/irmin_web-74307f7a/install/default/lib/irmin-web/opam" {"opam"}
+]
+bin: [
+  "/home/aweis/irmin-web/_esy/default/store/b/irmin_web-74307f7a/install/default/bin/IrminWeb.exe" {"IrminWeb.exe"}
+]
+doc: [
+  "/home/aweis/irmin-web/_esy/default/store/b/irmin_web-74307f7a/install/default/doc/irmin-web/README.md"
+]

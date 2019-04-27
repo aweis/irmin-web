@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Use irmin in a ReasonML project", 
   "scripts": { 
-    "buildjs": "js_of_ocaml runtime/mutex.js #{self.target_dir}/default/executable/IrminTestApp.bc"
+    "buildjs": "js_of_ocaml #{self.target_dir}/default/executable/IrminTestApp.bc"
   },
   "esy": {
     "build": "refmterr dune build -p irmin-web",
