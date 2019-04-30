@@ -3,21 +3,27 @@
   "version": "0.0.0",
   "description": "Use irmin in a ReasonML project", 
   "scripts": { 
-    "buildjs": "js_of_ocaml --pretty #{self.target_dir}/default/executable/IrminWeb.bc"
+    "buildjs": "js_of_ocaml --pretty #{self.target_dir}/default/executable/IrminWebApp.bc"
   },
   "esy": {
     "build": "refmterr dune build -p irmin-web",
     "release": {
       "releasedBinaries": [
-        "IrminWeb.exe"
+        "IrminWebApp.exe"
       ]
     }
   },
    "buildDirs": {
+    "library": {
+      "name": "irmin-web.lib",
+      "namespace": "IrminWeb",
+      "preprocess": ["pps js_of_ocaml-ppx"],
+      "require": ["irmin", "js_of_ocaml"]
+    },
     "executable": {
-      "require": ["irmin", "js_of_ocaml"],
-      "main": "IrminWeb",
-      "name": "IrminWeb.exe"
+      "require": ["js_of_ocaml", "irmin-web.lib"],
+      "main": "IrminWebApp",
+      "name": "IrminWebApp.exe"
     }
   },
   "dependencies": {
@@ -26,6 +32,7 @@
     "@opam/cstruct": ">= 1.7.0",
     "@opam/irmin": "*",
     "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
+    "@opam/js_of_ocaml-ppx": "*",
     "@opam/lwt": "*",
     "@esy-ocaml/reason": "*",
     "refmterr": "*",
