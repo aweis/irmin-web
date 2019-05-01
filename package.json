@@ -43,5 +43,6 @@
     "@opam/merlin": "*"
   },
   "resolutions": {
+    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }
 }
