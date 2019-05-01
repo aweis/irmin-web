@@ -7,5 +7,5 @@
    (name IrminWebApp)  ;  From package.json main field
    ; The name of the executable (runnable via esy x IrminWebApp.exe) 
    (public_name IrminWebApp.exe)  ;  From package.json name field
-   (libraries  js_of_ocaml irmin-web.lib ) ;  From package.json require field (array of strings)
+   (libraries  js_of_ocaml irmin-web.lib irmin ) ;  From package.json require field (array of strings)
 )

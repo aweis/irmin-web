@@ -31,4 +31,17 @@ let foo =
     | Some(s) => print_endline("key = " ++ k ++ " value = " ++ s)
     }
   );
-log(0.1);
+
+print_endline("Trying to implement the html storage store");
+
+module Make: Irmin.S_MAKER = Irmin.Make(Irmin.AO, Irmin.RW);
+
+module KV: Irmin.KV_MAKER =
+  (C: Irmin.Contents.S) =>
+    Make(
+      Irmin.Metadata.None,
+      C,
+      Irmin.Path.String_list,
+      Irmin.Branch.String,
+      Irmin.Hash.SHA1,
+    );

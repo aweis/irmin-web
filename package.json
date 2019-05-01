@@ -21,7 +21,7 @@
       "require": ["irmin", "js_of_ocaml"]
     },
     "executable": {
-      "require": ["js_of_ocaml", "irmin-web.lib"],
+      "require": ["js_of_ocaml", "irmin-web.lib", "irmin"],
       "main": "IrminWebApp",
       "name": "IrminWebApp.exe"
     }
