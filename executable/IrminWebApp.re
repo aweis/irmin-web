@@ -32,3 +32,8 @@ let foo =
     }
   );
 print_endline("FOOBAR");
+
+module Mem_store = Irmin_mem.KV(Irmin.Contents.String);
+
+open Lwt.Infix;
+let master = config => Mem_store.Repo.v(config) >>= Mem_store.master;

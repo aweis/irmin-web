@@ -29,10 +29,7 @@
       ]
     },
     "executable": {
-      "require": [
-        "js_of_ocaml",
-        "irmin-web.lib"
-      ],
+      "require": ["digestif.ocaml", "js_of_ocaml", "irmin-web.lib", "irmin", "irmin-mem", "lwt"],
       "main": "IrminWebApp",
       "name": "IrminWebApp.exe",
       "jsooFlags": [
@@ -74,6 +71,7 @@
     "@opam/cstruct": ">= 1.7.0",
     "@opam/digestif": "*",
     "@opam/irmin": "*",
+    "@opam/irmin-mem": "*",
     "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
     "@opam/js_of_ocaml-ppx": "*",
     "@opam/lwt": "*",
@@ -89,6 +87,7 @@
   "resolutions": {
     "@reason-native/rely": "facebookexperimental/reason-native:rely.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015",
     "@reason-native/pastel": "facebookexperimental/reason-native:pastel.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015",
-    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
+    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }
 }
