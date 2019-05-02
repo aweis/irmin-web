@@ -9,8 +9,7 @@
     "test": "./runTests.sh"
   },
   "esy": {
-    "build": "refmterr dune build -p irmin-web",
-    "release": {
+    "build": "refmterr dune build -p irmin-web", "release": {
       "releasedBinaries": [
         "IrminWebApp.exe"
       ]
