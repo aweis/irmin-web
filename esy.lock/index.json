@@ -1,5 +1,5 @@
 {
-  "checksum": "1c46e6a5a0f2b9f179753f30b3f9fb1b",
+  "checksum": "1cbc0d6c2d36f296556694db388e22d8",
   "root": "irmin-web@link-dev:./package.json",
   "node": {
     "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#d488cd9321cd5036bd36ec96744ce78c5d45fc49@d41d8cd9": {
@@ -80,9 +80,6 @@
         "@opam/js_of_ocaml@opam:3.3.0@64f97651",
         "@opam/irmin-unix@github:mirage/irmin:irmin-unix.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-mem@github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/irmin-graphql@github:mirage/irmin:irmin-graphql.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/irmin-git@github:mirage/irmin:irmin-git.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/irmin-fs@github:mirage/irmin:irmin-fs.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/digestif@opam:0.7.1@fa2f6b50",
@@ -154,36 +151,36 @@
         "@opam/ctypes@opam:0.14.0@ab554ad7", "@opam/bos@opam:0.2.0@df49e63f"
       ]
     },
-    "@opam/webmachine@opam:0.5.0@84a9574c": {
-      "id": "@opam/webmachine@opam:0.5.0@84a9574c",
+    "@opam/webmachine@opam:0.6.1@3f8a4e3b": {
+      "id": "@opam/webmachine@opam:0.6.1@3f8a4e3b",
       "name": "@opam/webmachine",
-      "version": "opam:0.5.0",
+      "version": "opam:0.6.1",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/bb/bb9d0571a0877764e2a7a3c1bd4b6c61#md5:bb9d0571a0877764e2a7a3c1bd4b6c61",
-          "archive:https://github.com/inhabitedtype/ocaml-webmachine/archive/0.5.0.tar.gz#md5:bb9d0571a0877764e2a7a3c1bd4b6c61"
+          "archive:https://opam.ocaml.org/cache/md5/31/310d54b853292754e54f105b37c8889d#md5:310d54b853292754e54f105b37c8889d",
+          "archive:https://github.com/inhabitedtype/ocaml-webmachine/archive/0.6.1.tar.gz#md5:310d54b853292754e54f105b37c8889d"
         ],
         "opam": {
           "name": "webmachine",
-          "version": "0.5.0",
-          "path": "esy.lock/opam/webmachine.0.5.0"
+          "version": "0.6.1",
+          "path": "esy.lock/opam/webmachine.0.6.1"
         }
       },
       "overrides": [],
       "dependencies": [
         "ocaml@4.7.1004@d41d8cd9", "@opam/re@opam:1.9.0@7f4a36a5",
+        "@opam/ptime@opam:0.8.4@82555699",
         "@opam/jbuilder@opam:transition@58bdfe0a",
         "@opam/dispatch@opam:0.4.0@9822d805",
         "@opam/cohttp@opam:2.1.2@0821c01b",
-        "@opam/calendar@opam:2.04@5110954c",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
         "ocaml@4.7.1004@d41d8cd9", "@opam/re@opam:1.9.0@7f4a36a5",
+        "@opam/ptime@opam:0.8.4@82555699",
         "@opam/dispatch@opam:0.4.0@9822d805",
-        "@opam/cohttp@opam:2.1.2@0821c01b",
-        "@opam/calendar@opam:2.04@5110954c"
+        "@opam/cohttp@opam:2.1.2@0821c01b"
       ]
     },
     "@opam/uutf@opam:1.0.2@4440868f": {
@@ -545,20 +542,20 @@
         "ocaml@4.7.1004@d41d8cd9", "@opam/result@opam:1.3@bee8bf2e"
       ]
     },
-    "@opam/psq@opam:0.1.1@d63fffb0": {
-      "id": "@opam/psq@opam:0.1.1@d63fffb0",
+    "@opam/psq@opam:0.2.0@58d0fdbe": {
+      "id": "@opam/psq@opam:0.2.0@58d0fdbe",
       "name": "@opam/psq",
-      "version": "opam:0.1.1",
+      "version": "opam:0.2.0",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/6d/6d6347f177adb1c1dae23c599248a9f1#md5:6d6347f177adb1c1dae23c599248a9f1",
-          "archive:https://github.com/pqwy/psq/releases/download/v0.1.1/psq-v0.1.1.tbz#md5:6d6347f177adb1c1dae23c599248a9f1"
+          "archive:https://opam.ocaml.org/cache/md5/b9/b94fb15f8878172bf58446b7d0fb7c1e#md5:b94fb15f8878172bf58446b7d0fb7c1e",
+          "archive:https://github.com/pqwy/psq/releases/download/v0.2.0/psq-v0.2.0.tbz#md5:b94fb15f8878172bf58446b7d0fb7c1e"
         ],
         "opam": {
           "name": "psq",
-          "version": "0.1.1",
-          "path": "esy.lock/opam/psq.0.1.1"
+          "version": "0.2.0",
+          "path": "esy.lock/opam/psq.0.2.0"
         }
       },
       "overrides": [],
@@ -1224,32 +1221,29 @@
         "@opam/result@opam:1.3@bee8bf2e", "@opam/mmap@opam:1.1.0@6f2a1426"
       ]
     },
-    "@opam/lru@opam:0.2.0@4504f635": {
-      "id": "@opam/lru@opam:0.2.0@4504f635",
+    "@opam/lru@opam:0.3.0@8181e203": {
+      "id": "@opam/lru@opam:0.3.0@8181e203",
       "name": "@opam/lru",
-      "version": "opam:0.2.0",
+      "version": "opam:0.3.0",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/0d/0de0ccda69b0b07a1c8169395782617f#md5:0de0ccda69b0b07a1c8169395782617f",
-          "archive:https://github.com/pqwy/lru/releases/download/v0.2.0/lru-0.2.0.tbz#md5:0de0ccda69b0b07a1c8169395782617f"
+          "archive:https://opam.ocaml.org/cache/md5/ec/ecaa8c9f5f708879140961ce35bcdba4#md5:ecaa8c9f5f708879140961ce35bcdba4",
+          "archive:https://github.com/pqwy/lru/releases/download/v0.3.0/lru-v0.3.0.tbz#md5:ecaa8c9f5f708879140961ce35bcdba4"
         ],
         "opam": {
           "name": "lru",
-          "version": "0.2.0",
-          "path": "esy.lock/opam/lru.0.2.0"
+          "version": "0.3.0",
+          "path": "esy.lock/opam/lru.0.3.0"
         }
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/topkg@opam:1.0.0@61f4ccf9",
-        "@opam/psq@opam:0.1.1@d63fffb0",
-        "@opam/ocamlfind@opam:1.8.0@f744a0c5",
-        "@opam/ocamlbuild@opam:0.14.0@427a2331",
-        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+        "ocaml@4.7.1004@d41d8cd9", "@opam/psq@opam:0.2.0@58d0fdbe",
+        "@opam/dune@opam:1.9.1@61bdaadf", "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/psq@opam:0.1.1@d63fffb0"
+        "ocaml@4.7.1004@d41d8cd9", "@opam/psq@opam:0.2.0@58d0fdbe"
       ]
     },
     "@opam/logs@opam:0.6.3@80c08d15": {
@@ -1280,6 +1274,31 @@
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [ "ocaml@4.7.1004@d41d8cd9" ]
+    },
+    "@opam/ke@opam:0.3@fdbede3b": {
+      "id": "@opam/ke@opam:0.3@fdbede3b",
+      "name": "@opam/ke",
+      "version": "opam:0.3",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/d0/d0a6d4b1614cca016088482dd3b13d9d746d6d5ade5128f6e030bcdd7fc43baf#sha256:d0a6d4b1614cca016088482dd3b13d9d746d6d5ade5128f6e030bcdd7fc43baf",
+          "archive:https://github.com/mirage/ke/releases/download/v0.3/ke-v0.3.tbz#sha256:d0a6d4b1614cca016088482dd3b13d9d746d6d5ade5128f6e030bcdd7fc43baf"
+        ],
+        "opam": {
+          "name": "ke",
+          "version": "0.3",
+          "path": "esy.lock/opam/ke.0.3"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/fmt@opam:0.8.6@a06c130d",
+        "@opam/dune@opam:1.9.1@61bdaadf", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/fmt@opam:0.8.6@a06c130d"
+      ]
     },
     "@opam/jsonm@opam:1.0.1@ad3e76f5": {
       "id": "@opam/jsonm@opam:1.0.1@ad3e76f5",
@@ -1474,12 +1493,12 @@
         "ocaml@4.7.1004@d41d8cd9", "@opam/yaml@opam:2.0.0@47a2a3f5",
         "@opam/irmin-watcher@opam:0.4.0@6d9e0a9f",
         "@opam/irmin-mem@github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/irmin-http@opam:1.3.3@e8b7a5d0",
+        "@opam/irmin-http@github:mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-graphql@github:mirage/irmin:irmin-graphql.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-git@github:mirage/irmin:irmin-git.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-fs@github:mirage/irmin:irmin-fs.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/git-unix@opam:2.0.0@54b00399",
+        "@opam/git-unix@github:mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
         "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
@@ -1488,12 +1507,12 @@
         "ocaml@4.7.1004@d41d8cd9", "@opam/yaml@opam:2.0.0@47a2a3f5",
         "@opam/irmin-watcher@opam:0.4.0@6d9e0a9f",
         "@opam/irmin-mem@github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/irmin-http@opam:1.3.3@e8b7a5d0",
+        "@opam/irmin-http@github:mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-graphql@github:mirage/irmin:irmin-graphql.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-git@github:mirage/irmin:irmin-git.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin-fs@github:mirage/irmin:irmin-fs.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/git-unix@opam:2.0.0@54b00399",
+        "@opam/git-unix@github:mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
         "@opam/digestif@opam:0.7.1@fa2f6b50"
       ]
     },
@@ -1520,33 +1539,28 @@
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9"
       ]
     },
-    "@opam/irmin-http@opam:1.3.3@e8b7a5d0": {
-      "id": "@opam/irmin-http@opam:1.3.3@e8b7a5d0",
+    "@opam/irmin-http@github:mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9": {
+      "id":
+        "@opam/irmin-http@github:mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
       "name": "@opam/irmin-http",
-      "version": "opam:1.3.3",
+      "version":
+        "github:mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/f2/f21fd211aaa5126588e90661c0d7f0b1#md5:f21fd211aaa5126588e90661c0d7f0b1",
-          "archive:https://github.com/mirage/irmin/releases/download/1.3.3/irmin-1.3.3.tbz#md5:f21fd211aaa5126588e90661c0d7f0b1"
-        ],
-        "opam": {
-          "name": "irmin-http",
-          "version": "1.3.3",
-          "path": "esy.lock/opam/irmin-http.1.3.3"
-        }
+          "github:mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
+        ]
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/webmachine@opam:0.5.0@84a9574c",
-        "@opam/jbuilder@opam:transition@58bdfe0a",
+        "ocaml@4.7.1004@d41d8cd9", "@opam/webmachine@opam:0.6.1@3f8a4e3b",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/crunch@opam:3.0.0@a5e49fd8",
+        "@opam/dune@opam:1.9.1@61bdaadf", "@opam/crunch@opam:3.0.0@a5e49fd8",
         "@opam/cohttp-lwt@opam:2.0.0@eac11459",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/webmachine@opam:0.5.0@84a9574c",
+        "ocaml@4.7.1004@d41d8cd9", "@opam/webmachine@opam:0.6.1@3f8a4e3b",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/crunch@opam:3.0.0@a5e49fd8",
         "@opam/cohttp-lwt@opam:2.0.0@eac11459"
@@ -1602,14 +1616,16 @@
       "dependencies": [
         "ocaml@4.7.1004@d41d8cd9",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/git@opam:2.0.0@f73fded8", "@opam/dune@opam:1.9.1@61bdaadf",
+        "@opam/git@github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
+        "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
         "ocaml@4.7.1004@d41d8cd9",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
-        "@opam/git@opam:2.0.0@f73fded8", "@opam/digestif@opam:0.7.1@fa2f6b50"
+        "@opam/git@github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
+        "@opam/digestif@opam:0.7.1@fa2f6b50"
       ]
     },
     "@opam/irmin-fs@github:mirage/irmin:irmin-fs.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9": {
@@ -1901,26 +1917,22 @@
         "@opam/graphql_parser@opam:0.12.2@e11c10fb"
       ]
     },
-    "@opam/git-unix@opam:2.0.0@54b00399": {
-      "id": "@opam/git-unix@opam:2.0.0@54b00399",
+    "@opam/git-unix@github:mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9": {
+      "id":
+        "@opam/git-unix@github:mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
       "name": "@opam/git-unix",
-      "version": "opam:2.0.0",
+      "version":
+        "github:mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/9d/9d7200e8eb15325e3bf37199f6255826#md5:9d7200e8eb15325e3bf37199f6255826",
-          "archive:https://github.com/mirage/ocaml-git/releases/download/2.0.0/git-2.0.0.tbz#md5:9d7200e8eb15325e3bf37199f6255826"
-        ],
-        "opam": {
-          "name": "git-unix",
-          "version": "2.0.0",
-          "path": "esy.lock/opam/git-unix.2.0.0"
-        }
+          "github:mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878"
+        ]
       },
       "overrides": [],
       "dependencies": [
         "ocaml@4.7.1004@d41d8cd9", "@opam/mtime@opam:1.1.0@8854ff29",
-        "@opam/git-http@opam:2.0.0@7661429e",
+        "@opam/git-http@github:mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
         "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/cohttp-lwt-unix@opam:2.0.0@2055e2ef",
         "@opam/cohttp@opam:2.1.2@0821c01b",
@@ -1930,59 +1942,52 @@
       ],
       "devDependencies": [
         "ocaml@4.7.1004@d41d8cd9", "@opam/mtime@opam:1.1.0@8854ff29",
-        "@opam/git-http@opam:2.0.0@7661429e",
+        "@opam/git-http@github:mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
         "@opam/cohttp-lwt-unix@opam:2.0.0@2055e2ef",
         "@opam/cohttp@opam:2.1.2@0821c01b",
         "@opam/cmdliner@opam:1.0.3@96d31520",
         "@opam/base-unix@opam:base@87d0b2eb"
       ]
     },
-    "@opam/git-http@opam:2.0.0@7661429e": {
-      "id": "@opam/git-http@opam:2.0.0@7661429e",
+    "@opam/git-http@github:mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9": {
+      "id":
+        "@opam/git-http@github:mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
       "name": "@opam/git-http",
-      "version": "opam:2.0.0",
+      "version":
+        "github:mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/9d/9d7200e8eb15325e3bf37199f6255826#md5:9d7200e8eb15325e3bf37199f6255826",
-          "archive:https://github.com/mirage/ocaml-git/releases/download/2.0.0/git-2.0.0.tbz#md5:9d7200e8eb15325e3bf37199f6255826"
-        ],
-        "opam": {
-          "name": "git-http",
-          "version": "2.0.0",
-          "path": "esy.lock/opam/git-http.2.0.0"
-        }
+          "github:mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878"
+        ]
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/sexplib@opam:v0.12.0@c65643bb",
-        "@opam/git@opam:2.0.0@f73fded8", "@opam/dune@opam:1.9.1@61bdaadf",
+        "ocaml@4.7.1004@d41d8cd9",
+        "@opam/git@github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
+        "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/cohttp-lwt@opam:2.0.0@eac11459",
         "@opam/cohttp@opam:2.1.2@0821c01b",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/sexplib@opam:v0.12.0@c65643bb",
-        "@opam/git@opam:2.0.0@f73fded8",
+        "ocaml@4.7.1004@d41d8cd9",
+        "@opam/git@github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
         "@opam/cohttp-lwt@opam:2.0.0@eac11459",
         "@opam/cohttp@opam:2.1.2@0821c01b"
       ]
     },
-    "@opam/git@opam:2.0.0@f73fded8": {
-      "id": "@opam/git@opam:2.0.0@f73fded8",
+    "@opam/git@github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9": {
+      "id":
+        "@opam/git@github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878@d41d8cd9",
       "name": "@opam/git",
-      "version": "opam:2.0.0",
+      "version":
+        "github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/9d/9d7200e8eb15325e3bf37199f6255826#md5:9d7200e8eb15325e3bf37199f6255826",
-          "archive:https://github.com/mirage/ocaml-git/releases/download/2.0.0/git-2.0.0.tbz#md5:9d7200e8eb15325e3bf37199f6255826"
-        ],
-        "opam": {
-          "name": "git",
-          "version": "2.0.0",
-          "path": "esy.lock/opam/git.2.0.0"
-        }
+          "github:mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878"
+        ]
       },
       "overrides": [],
       "dependencies": [
@@ -1990,11 +1995,13 @@
         "@opam/rresult@opam:0.6.0@4b185e72",
         "@opam/ocplib-endian@opam:1.0@aa720242",
         "@opam/ocamlgraph@opam:1.8.8@b9b25571",
-        "@opam/lwt@opam:4.2.1@c1888ec9", "@opam/lru@opam:0.2.0@4504f635",
-        "@opam/logs@opam:0.6.3@80c08d15", "@opam/hex@opam:1.4.0@f22c5e98",
-        "@opam/fpath@opam:0.7.2@45477b93", "@opam/fmt@opam:0.8.6@a06c130d",
-        "@opam/encore@opam:0.2@e57898be", "@opam/dune@opam:1.9.1@61bdaadf",
-        "@opam/duff@opam:0.2@e0571961", "@opam/digestif@opam:0.7.1@fa2f6b50",
+        "@opam/lwt@opam:4.2.1@c1888ec9", "@opam/lru@opam:0.3.0@8181e203",
+        "@opam/logs@opam:0.6.3@80c08d15", "@opam/ke@opam:0.3@fdbede3b",
+        "@opam/hex@opam:1.4.0@f22c5e98", "@opam/fpath@opam:0.7.2@45477b93",
+        "@opam/fmt@opam:0.8.6@a06c130d",
+        "@opam/encore@github:mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975@d41d8cd9",
+        "@opam/dune@opam:1.9.1@61bdaadf", "@opam/duff@opam:0.2@e0571961",
+        "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/decompress@opam:0.8.1@13184133",
         "@opam/cstruct@opam:4.0.0@27f747cf",
         "@opam/checkseum@opam:0.0.3@b3ef862a",
@@ -2007,11 +2014,12 @@
         "@opam/rresult@opam:0.6.0@4b185e72",
         "@opam/ocplib-endian@opam:1.0@aa720242",
         "@opam/ocamlgraph@opam:1.8.8@b9b25571",
-        "@opam/lwt@opam:4.2.1@c1888ec9", "@opam/lru@opam:0.2.0@4504f635",
-        "@opam/logs@opam:0.6.3@80c08d15", "@opam/hex@opam:1.4.0@f22c5e98",
-        "@opam/fpath@opam:0.7.2@45477b93", "@opam/fmt@opam:0.8.6@a06c130d",
-        "@opam/encore@opam:0.2@e57898be", "@opam/duff@opam:0.2@e0571961",
-        "@opam/digestif@opam:0.7.1@fa2f6b50",
+        "@opam/lwt@opam:4.2.1@c1888ec9", "@opam/lru@opam:0.3.0@8181e203",
+        "@opam/logs@opam:0.6.3@80c08d15", "@opam/ke@opam:0.3@fdbede3b",
+        "@opam/hex@opam:1.4.0@f22c5e98", "@opam/fpath@opam:0.7.2@45477b93",
+        "@opam/fmt@opam:0.8.6@a06c130d",
+        "@opam/encore@github:mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975@d41d8cd9",
+        "@opam/duff@opam:0.2@e0571961", "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/decompress@opam:0.8.1@13184133",
         "@opam/cstruct@opam:4.0.0@27f747cf",
         "@opam/checkseum@opam:0.0.3@b3ef862a",
@@ -2130,31 +2138,27 @@
       ],
       "devDependencies": [ "ocaml@4.7.1004@d41d8cd9" ]
     },
-    "@opam/encore@opam:0.2@e57898be": {
-      "id": "@opam/encore@opam:0.2@e57898be",
+    "@opam/encore@github:mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975@d41d8cd9": {
+      "id":
+        "@opam/encore@github:mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975@d41d8cd9",
       "name": "@opam/encore",
-      "version": "opam:0.2",
+      "version":
+        "github:mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/d7/d70aaa7c71e7b819cf75c9d5c90f0cf3#md5:d70aaa7c71e7b819cf75c9d5c90f0cf3",
-          "archive:https://github.com/dinosaure/encore/releases/download/v0.2/encore-v0.2.tbz#md5:d70aaa7c71e7b819cf75c9d5c90f0cf3"
-        ],
-        "opam": {
-          "name": "encore",
-          "version": "0.2",
-          "path": "esy.lock/opam/encore.0.2"
-        }
+          "github:mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975"
+        ]
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/ocplib-endian@opam:1.0@aa720242",
+        "ocaml@4.7.1004@d41d8cd9", "@opam/ke@opam:0.3@fdbede3b",
         "@opam/fmt@opam:0.8.6@a06c130d", "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/angstrom@opam:0.11.2@2e02b026",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/ocplib-endian@opam:1.0@aa720242",
+        "ocaml@4.7.1004@d41d8cd9", "@opam/ke@opam:0.3@fdbede3b",
         "@opam/fmt@opam:0.8.6@a06c130d",
         "@opam/angstrom@opam:0.11.2@2e02b026"
       ]
@@ -2792,29 +2796,6 @@
         "@opam/base-bytes@opam:base@19d0c2ff",
         "@opam/base-bigarray@opam:base@b03491b0"
       ]
-    },
-    "@opam/calendar@opam:2.04@5110954c": {
-      "id": "@opam/calendar@opam:2.04@5110954c",
-      "name": "@opam/calendar",
-      "version": "opam:2.04",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/md5/62/625b4f32c9ff447501868fa1c44f4f4f#md5:625b4f32c9ff447501868fa1c44f4f4f",
-          "archive:https://download.ocamlcore.org/calendar/calendar/2.04/calendar-2.04.tar.gz#md5:625b4f32c9ff447501868fa1c44f4f4f"
-        ],
-        "opam": {
-          "name": "calendar",
-          "version": "2.04",
-          "path": "esy.lock/opam/calendar.2.04"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.7.1004@d41d8cd9", "@opam/ocamlfind@opam:1.8.0@f744a0c5",
-        "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [ "ocaml@4.7.1004@d41d8cd9" ]
     },
     "@opam/bos@opam:0.2.0@df49e63f": {
       "id": "@opam/bos@opam:0.2.0@df49e63f",

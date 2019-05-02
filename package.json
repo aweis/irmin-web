@@ -34,11 +34,6 @@
     "@opam/irmin": "*",
     "@opam/irmin-mem": "*",
     "@opam/irmin-unix": "*",
-    "@opam/irmin-graphql": "*",
-    "@opam/irmin-fs": "*",
-    "@opam/irmin-git": "*",
-    "@opam/ocaml-git": "*",
-    "@opam/git-mirage": "*",
     "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
     "@opam/js_of_ocaml-ppx": "*",
     "@opam/lwt": "*",
@@ -51,13 +46,20 @@
     "@opam/merlin": "*"
   },
   "resolutions": {
-    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
-    "@opam/irmin-unix": "mirage/irmin:irmin-unix.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
-    "@opam/irmin-graphql": "mirage/irmin:irmin-graphql.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/encore": "mirage/encore:encore.opam#993bb1c29faed1b2f3e7a00e4e6c30b13d53b975",
     "@opam/irmin-fs": "mirage/irmin:irmin-fs.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
     "@opam/irmin-git": "mirage/irmin:irmin-git.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
-    "@opam/git": "mirage/ocaml-git:ocaml-git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
-    "@opam/git-mirage": "mirage/ocaml-git:ocaml-git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
-    "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
+    "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-http": "mirage/irmin:irmin-http.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-chunk": "mirage/irmin:irmin-chunk.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-mirage": "mirage/irmin:irmin-mirage.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-graphql": "mirage/irmin:irmin-graphql.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-unix": "mirage/irmin:irmin-unix.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-test": "mirage/irmin:irmin-test.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/git-http": "mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
+    "@opam/git-mirage": "mirage/ocaml-git:git-mirage.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
+    "@opam/git-unix": "mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
+    "@opam/git": "mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878"
   }
 }
