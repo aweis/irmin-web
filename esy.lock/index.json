@@ -1,5 +1,5 @@
 {
-  "checksum": "47c9b01cbef9191816572c3fc68730b3",
+  "checksum": "d51235e8e071b7de1da237f66a216de0",
   "root": "irmin-web@link-dev:./package.json",
   "node": {
     "refmterr@3.1.10@d41d8cd9": {
@@ -62,8 +62,10 @@
         "ocaml@4.7.1004@d41d8cd9", "@opam/lwt@opam:4.2.1@c1888ec9",
         "@opam/js_of_ocaml-ppx@opam:3.4.0@68bbd041",
         "@opam/js_of_ocaml@opam:3.3.0@64f97651",
+        "@opam/irmin-mem@github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
         "@opam/dune@opam:1.9.1@61bdaadf",
+        "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/cstruct@opam:4.0.0@27f747cf",
         "@opam/base64@opam:3.2.0@e1bac209",
         "@esy-ocaml/reason@3.4.0@d41d8cd9"
@@ -918,6 +920,29 @@
       ],
       "devDependencies": [
         "ocaml@4.7.1004@d41d8cd9", "@opam/dune@opam:1.9.1@61bdaadf"
+      ]
+    },
+    "@opam/irmin-mem@github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9": {
+      "id":
+        "@opam/irmin-mem@github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
+      "name": "@opam/irmin-mem",
+      "version":
+        "github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.7.1004@d41d8cd9",
+        "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9",
+        "@opam/dune@opam:1.9.1@61bdaadf", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.7.1004@d41d8cd9",
+        "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9"
       ]
     },
     "@opam/irmin@github:mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10@d41d8cd9": {

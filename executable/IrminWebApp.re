@@ -32,3 +32,14 @@ let foo =
     }
   );
 log(0.1);
+module Mem_store = Irmin_mem.KV(Irmin.Contents.String);
+
+let config = Irmin_mem.config();
+
+let repo = Mem_store.Repo.v(config);
+
+open Lwt.Infix;
+
+let master = config => Mem_store.Repo.v(config) >>= Mem_store.master;
+
+print_endline(Irmin.version);
