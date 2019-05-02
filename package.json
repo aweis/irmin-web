@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "description": "Use irmin in a ReasonML project", 
   "scripts": { 
-    "buildjs": "js_of_ocaml --pretty #{self.target_dir}/default/executable/IrminWebApp.bc"
+    "buildjs": "js_of_ocaml --opt 3 #{self.target_dir}/default/executable/IrminWebApp.bc"
   },
   "esy": {
-    "build": "refmterr dune build -p irmin-web",
-    "release": {
+    "build": "refmterr dune build -p irmin-web", "release": {
       "releasedBinaries": [
         "IrminWebApp.exe"
       ]
