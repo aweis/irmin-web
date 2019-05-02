@@ -21,7 +21,7 @@
       "require": ["irmin", "js_of_ocaml"]
     },
     "executable": {
-      "require": ["js_of_ocaml", "irmin-web.lib"],
+      "require": ["digestif.ocaml", "js_of_ocaml", "irmin-web.lib", "irmin", "irmin-mem", "lwt"],
       "main": "IrminWebApp",
       "name": "IrminWebApp.exe"
     }
@@ -30,7 +30,9 @@
     "@opam/dune": ">=1.6.0",
     "@opam/base64": "*",
     "@opam/cstruct": ">= 1.7.0",
+    "@opam/digestif": "*",
     "@opam/irmin": "*",
+    "@opam/irmin-mem": "*",
     "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
     "@opam/js_of_ocaml-ppx": "*",
     "@opam/lwt": "*",
@@ -43,6 +45,7 @@
     "@opam/merlin": "*"
   },
   "resolutions": {
-    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
+    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }
 }
