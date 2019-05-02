@@ -33,6 +33,12 @@
     "@opam/digestif": "*",
     "@opam/irmin": "*",
     "@opam/irmin-mem": "*",
+    "@opam/irmin-unix": "*",
+    "@opam/irmin-graphql": "*",
+    "@opam/irmin-fs": "*",
+    "@opam/irmin-git": "*",
+    "@opam/ocaml-git": "*",
+    "@opam/git-mirage": "*",
     "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
     "@opam/js_of_ocaml-ppx": "*",
     "@opam/lwt": "*",
@@ -46,6 +52,12 @@
   },
   "resolutions": {
     "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-unix": "mirage/irmin:irmin-unix.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-graphql": "mirage/irmin:irmin-graphql.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-fs": "mirage/irmin:irmin-fs.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-git": "mirage/irmin:irmin-git.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/git": "mirage/ocaml-git:ocaml-git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
+    "@opam/git-mirage": "mirage/ocaml-git:ocaml-git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
     "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }
 }
