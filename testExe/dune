@@ -4,11 +4,15 @@
 ; !!!! If you want to stop using pesy and manage this file by hand, change pacakge.json's 'esy.build' command to: refmterr dune build -p  irmin-web
 (executable
    ; The entrypoint module
-   (name IrminWebApp)  ;  From package.json main field
-   ; The name of the executable (runnable via esy x IrminWebApp.exe) 
-   (public_name IrminWebApp.exe)  ;  From package.json name field
-   (js_of_ocaml 
-     (flags (--pretty))  ; From package.json jsooFlags field
-   )
-   (libraries  js_of_ocaml irmin-web.lib ) ;  From package.json require field (array of strings)
+   (name RunIrminTests)  ;  From package.json main field
+   ; The name of the executable (runnable via esy x RunIrminTests.exe) 
+   (public_name RunIrminTests.exe)  ;  From package.json name field
+   (libraries  irmin-web.tests ) ;  From package.json require field (array of strings)
+   
+ (js_of_ocaml
+  (javascript_files
+     ../jsStubs/unix_isatty.js
+  )
+ (flags (--pretty))
+ ) 
 )
