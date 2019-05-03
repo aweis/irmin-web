@@ -31,4 +31,4 @@ let foo =
     | Some(s) => print_endline("key = " ++ k ++ " value = " ++ s)
     }
   );
-log(0.1);
+print_endline("FOOBAR");

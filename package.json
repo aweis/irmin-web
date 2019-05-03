@@ -86,6 +86,7 @@
   },
   "resolutions": {
     "@reason-native/rely": "facebookexperimental/reason-native:rely.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015",
-    "@reason-native/pastel": "facebookexperimental/reason-native:pastel.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015"
+    "@reason-native/pastel": "facebookexperimental/reason-native:pastel.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015",
+    "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }
 }
