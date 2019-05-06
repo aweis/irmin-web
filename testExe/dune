@@ -7,7 +7,7 @@
    (name RunIrminTests)  ;  From package.json main field
    ; The name of the executable (runnable via esy x RunIrminTests.exe) 
    (public_name RunIrminTests.exe)  ;  From package.json name field
-   (libraries  irmin-web.tests ) ;  From package.json require field (array of strings)
+   (libraries  digestif.ocaml irmin-web.tests ) ;  From package.json require field (array of strings)
    
  (js_of_ocaml
   (javascript_files
