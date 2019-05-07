@@ -7,9 +7,16 @@ let repo = Mem_store.Repo.v(config);
 open Lwt.Infix;
 let master = config => Mem_store.Repo.v(config) >>= Mem_store.master;
 
+let pp_commit_info = (info: Irmin.Info.t) =>
+  Irmin.Info.author(info)
+  ++ ": "
+  ++ Irmin.Info.message(info)
+  ++ ": "
+  ++ Int64.to_string(Irmin.Info.date(info));
+
 let info = msg => {
   let date = Int64.zero;
-  let author = "author";
+  let author = "Adam Weis";
   Irmin.Info.v(~date, ~author, msg);
 };
 
@@ -83,6 +90,33 @@ let main =
               Printf.printf(
                 "2. is the history empty? %b\n",
                 Mem_store.History.is_empty(history_res),
+              )
+          )
+      )
+      >>= (
+        () =>
+          Mem_store.history(t)
+          >|= (
+            history_res =>
+              Printf.printf(
+                "3. number of vertices %d\n number of edges %d\n",
+                Mem_store.History.nb_vertex(history_res),
+                Mem_store.History.nb_edges(history_res),
+              )
+          )
+      )
+      >>= (
+        () =>
+          Mem_store.history(t)
+          >|= (
+            history_res =>
+              Mem_store.History.iter_vertex(
+                v =>
+                  print_endline(
+                    "vertex! "
+                    ++ (v |> Mem_store.Commit.info |> pp_commit_info),
+                  ),
+                history_res,
               )
           )
       )
