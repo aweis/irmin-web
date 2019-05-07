@@ -19,21 +19,28 @@
     "library": {
       "name": "irmin-web.lib",
       "namespace": "IrminWeb",
-      "preprocess": [ "pps js_of_ocaml-ppx"
-      ],
-      "require": [ "irmin",
+      "preprocess": [ "pps js_of_ocaml-ppx" ],
+      "require": [
+        "irmin",
         "js_of_ocaml"
       ]
     },
     "executable": {
-      "require": ["digestif.ocaml", "js_of_ocaml","irmin", "irmin-mem", "irmin-unix", "irmin-git", "lwt"],
+      "require": ["digestif.ocaml", "checkseum.ocaml", "js_of_ocaml", "irmin", "irmin-mem", "irmin-unix", "irmin-git", "lwt"],
       "main": "IrminWebApp",
       "name": "IrminWebApp.exe",
       "preprocess": [
         "pps js_of_ocaml-ppx"
       ],
-      "jsooFlags": [
-        "--pretty"
+      "rawBuildConfig": [
+        "(js_of_ocaml",
+        " (javascript_files",
+        "    ../jsStubs/mutex.js",
+        "    ../jsStubs/lwt.js",
+        "    ../jsStubs/unix_isatty.js",
+        " )",
+        "(flags (--pretty))",
+        ")"
       ]
     },
     "tests": {
@@ -66,11 +73,13 @@
     }
   },
   "dependencies": {
+    "@opam/digestif": "*",
     "@opam/dune": ">=1.6.0",
     "@opam/base64": "*",
     "@opam/cstruct": ">= 1.7.0",
-    "@opam/digestif": "*",
     "@opam/irmin": "*",
+    "@opam/cohttp-lwt": "*",
+    "@opam/cohttp-lwt-jsoo": "*",
     "@opam/irmin-mem": "*",
     "@opam/irmin-unix": "*",
     "@opam/irmin-graphql": "*",
@@ -103,6 +112,7 @@
     "@opam/git": "mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
     "@opam/git-http": "mirage/ocaml-git:git-http.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
     "@opam/git-unix": "mirage/ocaml-git:git-unix.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
+    "@opam/checkseum": "mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a",
     "@opam/encore": "mirage/encore:encore.opam#624af25e46ea2b820b93679829c5c99999229c31",
     "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }

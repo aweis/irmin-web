@@ -1,3 +1,16 @@
+/*
+ * Irmin-git
+ */
+module Git_store = Irmin_unix.Git.FS.KV(Irmin.Contents.Json);
+
+/*
+ *
+ * Irmin-mem below
+ *
+ *
+ *
+ */
+
 module Mem_store = Irmin_mem.KV(Irmin.Contents.String);
 
 let config = Irmin_mem.config();

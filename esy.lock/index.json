@@ -1,5 +1,5 @@
 {
-  "checksum": "abd1cdfb21d1cf3645183d42c6be6a2d",
+  "checksum": "7cd00d581dc4576cef813f7416ee2faa",
   "root": "irmin-web@link-dev:./package.json",
   "node": {
     "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#d488cd9321cd5036bd36ec96744ce78c5d45fc49@d41d8cd9": {
@@ -86,6 +86,8 @@
         "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/cstruct@opam:4.0.0@27f747cf",
+        "@opam/cohttp-lwt-jsoo@opam:1.2.0@1c891db1",
+        "@opam/cohttp-lwt@opam:2.0.0@eac11459",
         "@opam/base64@opam:3.2.0@e1bac209",
         "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
@@ -1422,6 +1424,35 @@
         "@opam/js_of_ocaml@opam:3.3.0@a0351fc0"
       ]
     },
+    "@opam/js_of_ocaml-lwt@opam:3.4.0@8207cd9d": {
+      "id": "@opam/js_of_ocaml-lwt@opam:3.4.0@8207cd9d",
+      "name": "@opam/js_of_ocaml-lwt",
+      "version": "opam:3.4.0",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/42/42f914d0410787d65668d2822fdab1a1#md5:42f914d0410787d65668d2822fdab1a1",
+          "archive:https://github.com/ocsigen/js_of_ocaml/archive/3.4.0.tar.gz#md5:42f914d0410787d65668d2822fdab1a1"
+        ],
+        "opam": {
+          "name": "js_of_ocaml-lwt",
+          "version": "3.4.0",
+          "path": "esy.lock/opam/js_of_ocaml-lwt.3.4.0"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/lwt@opam:4.2.1@c1888ec9",
+        "@opam/js_of_ocaml-ppx@opam:3.4.0@68bbd041",
+        "@opam/js_of_ocaml@opam:3.3.0@a0351fc0",
+        "@opam/dune@opam:1.9.1@61bdaadf", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/lwt@opam:4.2.1@c1888ec9",
+        "@opam/js_of_ocaml-ppx@opam:3.4.0@68bbd041",
+        "@opam/js_of_ocaml@opam:3.3.0@a0351fc0"
+      ]
+    },
     "@opam/js_of_ocaml-compiler@opam:3.4.0@d56cfc63": {
       "id": "@opam/js_of_ocaml-compiler@opam:3.4.0@d56cfc63",
       "name": "@opam/js_of_ocaml-compiler",
@@ -2066,7 +2097,7 @@
         "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/decompress@opam:0.8.1@13184133",
         "@opam/cstruct@opam:4.0.0@27f747cf",
-        "@opam/checkseum@opam:0.0.3@b3ef862a",
+        "@opam/checkseum@github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a@d41d8cd9",
         "@opam/astring@opam:0.8.3@4e5e17d5",
         "@opam/angstrom@opam:0.11.2@2e02b026",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
@@ -2084,7 +2115,7 @@
         "@opam/duff@opam:0.2@e0571961", "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/decompress@opam:0.8.1@13184133",
         "@opam/cstruct@opam:4.0.0@27f747cf",
-        "@opam/checkseum@opam:0.0.3@b3ef862a",
+        "@opam/checkseum@github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a@d41d8cd9",
         "@opam/astring@opam:0.8.3@4e5e17d5",
         "@opam/angstrom@opam:0.11.2@2e02b026"
       ]
@@ -2389,7 +2420,7 @@
         "ocaml@4.7.1004@d41d8cd9", "@opam/optint@opam:0.0.2@c8c8b5ee",
         "@opam/dune@opam:1.9.1@61bdaadf",
         "@opam/cmdliner@opam:1.0.3@96d31520",
-        "@opam/checkseum@opam:0.0.3@b3ef862a",
+        "@opam/checkseum@github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a@d41d8cd9",
         "@opam/base-bytes@opam:base@19d0c2ff",
         "@opam/base-bigarray@opam:base@b03491b0",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
@@ -2397,7 +2428,7 @@
       "devDependencies": [
         "ocaml@4.7.1004@d41d8cd9", "@opam/optint@opam:0.0.2@c8c8b5ee",
         "@opam/cmdliner@opam:1.0.3@96d31520",
-        "@opam/checkseum@opam:0.0.3@b3ef862a",
+        "@opam/checkseum@github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a@d41d8cd9",
         "@opam/base-bytes@opam:base@19d0c2ff",
         "@opam/base-bigarray@opam:base@b03491b0"
       ]
@@ -2712,6 +2743,42 @@
         "@opam/base-unix@opam:base@87d0b2eb"
       ]
     },
+    "@opam/cohttp-lwt-jsoo@opam:1.2.0@1c891db1": {
+      "id": "@opam/cohttp-lwt-jsoo@opam:1.2.0@1c891db1",
+      "name": "@opam/cohttp-lwt-jsoo",
+      "version": "opam:1.2.0",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/7a/7aa3d4582848afff9a62f866b23173e1#md5:7aa3d4582848afff9a62f866b23173e1",
+          "archive:https://github.com/mirage/ocaml-cohttp/releases/download/v1.2.0/cohttp-v1.2.0.tbz#md5:7aa3d4582848afff9a62f866b23173e1"
+        ],
+        "opam": {
+          "name": "cohttp-lwt-jsoo",
+          "version": "1.2.0",
+          "path": "esy.lock/opam/cohttp-lwt-jsoo.1.2.0"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/lwt@opam:4.2.1@c1888ec9",
+        "@opam/js_of_ocaml-ppx@opam:3.4.0@68bbd041",
+        "@opam/js_of_ocaml-lwt@opam:3.4.0@8207cd9d",
+        "@opam/js_of_ocaml@opam:3.3.0@a0351fc0",
+        "@opam/dune@opam:1.9.1@61bdaadf",
+        "@opam/cohttp-lwt@opam:2.0.0@eac11459",
+        "@opam/cohttp@opam:2.1.2@0821c01b",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.7.1004@d41d8cd9", "@opam/lwt@opam:4.2.1@c1888ec9",
+        "@opam/js_of_ocaml-ppx@opam:3.4.0@68bbd041",
+        "@opam/js_of_ocaml-lwt@opam:3.4.0@8207cd9d",
+        "@opam/js_of_ocaml@opam:3.3.0@a0351fc0",
+        "@opam/cohttp-lwt@opam:2.0.0@eac11459",
+        "@opam/cohttp@opam:2.1.2@0821c01b"
+      ]
+    },
     "@opam/cohttp-lwt@opam:2.0.0@eac11459": {
       "id": "@opam/cohttp-lwt@opam:2.0.0@eac11459",
       "name": "@opam/cohttp-lwt",
@@ -2805,21 +2872,17 @@
       ],
       "devDependencies": [ "ocaml@4.7.1004@d41d8cd9" ]
     },
-    "@opam/checkseum@opam:0.0.3@b3ef862a": {
-      "id": "@opam/checkseum@opam:0.0.3@b3ef862a",
+    "@opam/checkseum@github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a@d41d8cd9": {
+      "id":
+        "@opam/checkseum@github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a@d41d8cd9",
       "name": "@opam/checkseum",
-      "version": "opam:0.0.3",
+      "version":
+        "github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/ae/ae5c301cd3d514ed44e13796015bfc1c#md5:ae5c301cd3d514ed44e13796015bfc1c",
-          "archive:https://github.com/dinosaure/checkseum/releases/download/v0.0.3/checkseum-v0.0.3.tbz#md5:ae5c301cd3d514ed44e13796015bfc1c"
-        ],
-        "opam": {
-          "name": "checkseum",
-          "version": "0.0.3",
-          "path": "esy.lock/opam/checkseum.0.0.3"
-        }
+          "github:mirage/checkseum:checkseum.opam#71c4016de0aff4d8b63e7a4af0afe4a030a70d5a"
+        ]
       },
       "overrides": [],
       "dependencies": [

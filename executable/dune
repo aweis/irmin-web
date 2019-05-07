@@ -7,9 +7,15 @@
    (name IrminWebApp)  ;  From package.json main field
    ; The name of the executable (runnable via esy x IrminWebApp.exe) 
    (public_name IrminWebApp.exe)  ;  From package.json name field
-   (js_of_ocaml 
-     (flags (--pretty))  ; From package.json jsooFlags field
-   )
-   (libraries  digestif.ocaml js_of_ocaml irmin irmin-mem irmin-unix irmin-git lwt ) ;  From package.json require field (array of strings)
+   (libraries  digestif.ocaml checkseum.ocaml js_of_ocaml irmin irmin-mem irmin-unix irmin-git lwt ) ;  From package.json require field (array of strings)
+   
+ (js_of_ocaml
+  (javascript_files
+     ../jsStubs/mutex.js
+     ../jsStubs/lwt.js
+     ../jsStubs/unix_isatty.js
+  )
+ (flags (--pretty))
+ ) 
    (preprocess ( pps js_of_ocaml-ppx ))  ; From package.json preprocess field
 )
