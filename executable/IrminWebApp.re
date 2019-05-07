@@ -7,13 +7,6 @@ let repo = Mem_store.Repo.v(config);
 open Lwt.Infix;
 let master = config => Mem_store.Repo.v(config) >>= Mem_store.master;
 
-let pp_commit_info = (info: Irmin.Info.t) =>
-  Irmin.Info.author(info)
-  ++ ": "
-  ++ Irmin.Info.message(info)
-  ++ ": "
-  ++ Int64.to_string(Irmin.Info.date(info));
-
 let info = msg => {
   let date = Int64.zero;
   let author = "Adam Weis";
@@ -21,6 +14,27 @@ let info = msg => {
 };
 
 let infof = fmt => Fmt.kstrf((str, ()) => info(str), fmt);
+
+Js_of_ocaml.Js.export(
+  "Irmin",
+  [%js
+    {
+      as _;
+      pub add = (x, y) => x +. y;
+      pub abs = x => abs_float(x);
+      val foo = 8;
+      val zero = 0.
+    }
+  ],
+);
+
+let pp_commit_info = (info: Irmin.Info.t) =>
+  Irmin.Info.author(info)
+  ++ ": "
+  ++ Irmin.Info.message(info)
+  ++ ": "
+  ++ Int64.to_string(Irmin.Info.date(info));
+
 let main =
   Mem_store.Repo.v(config)
   >>= Mem_store.master

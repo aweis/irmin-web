@@ -31,6 +31,9 @@
       "require": ["digestif.ocaml", "js_of_ocaml","irmin", "irmin-mem", "lwt"],
       "main": "IrminWebApp",
       "name": "IrminWebApp.exe",
+      "preprocess": [
+        "pps js_of_ocaml-ppx"
+      ],
       "jsooFlags": [
         "--pretty"
       ]
