@@ -74,6 +74,7 @@
     "@opam/digestif": "*",
     "@opam/irmin": "*",
     "@opam/irmin-mem": "*",
+    "@opam/irmin-git": "*",
     "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
     "@opam/js_of_ocaml-ppx": "*",
     "@opam/lwt": "*",
@@ -90,6 +91,9 @@
     "@reason-native/rely": "facebookexperimental/reason-native:rely.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015",
     "@reason-native/pastel": "facebookexperimental/reason-native:pastel.json#4f03ed65b257fa4ab9ee9c2db019acd1e8d35015",
     "@opam/irmin": "mirage/irmin:irmin.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/irmin-git": "mirage/irmin:irmin-git.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10",
+    "@opam/git": "mirage/ocaml-git:git.opam#27640eba56577f1802ef6ea0502b0e0b53079878",
+    "@opam/encore": "mirage/encore:encore.opam#624af25e46ea2b820b93679829c5c99999229c31",
     "@opam/irmin-mem": "mirage/irmin:irmin-mem.opam#8c94ce2ecef64921f9c3494f4e4ea312883cca10"
   }
 }
