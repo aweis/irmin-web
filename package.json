@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Use irmin in a ReasonML project",
   "scripts": {
-    "buildjs": "refmterr dune build executable/IrminWebApp.bc.js",
+    "buildjs": "refmterr dune build --profile=release executable/IrminWebApp.bc.js",
     "buildTestsJs": "refmterr dune build testExe/RunIrminTests.bc.js",
     "runTestsJs": "node #{self.target_dir}/default/testExe/RunIrminTests.bc.js",
     "test": "./runTests.sh"
