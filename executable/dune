@@ -10,6 +10,6 @@
    (js_of_ocaml 
      (flags (--pretty))  ; From package.json jsooFlags field
    )
-   (libraries  digestif.ocaml js_of_ocaml irmin irmin-mem lwt ) ;  From package.json require field (array of strings)
+   (libraries  digestif.ocaml js_of_ocaml irmin irmin-mem irmin-unix irmin-git lwt ) ;  From package.json require field (array of strings)
    (preprocess ( pps js_of_ocaml-ppx ))  ; From package.json preprocess field
 )
