@@ -28,7 +28,7 @@
       ]
     },
     "executable": {
-      "require": ["digestif.ocaml", "js_of_ocaml", "irmin-web.lib", "irmin", "irmin-mem", "lwt"],
+      "require": ["digestif.ocaml", "js_of_ocaml","irmin", "irmin-mem", "lwt"],
       "main": "IrminWebApp",
       "name": "IrminWebApp.exe",
       "jsooFlags": [
