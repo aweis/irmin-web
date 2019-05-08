@@ -1,3 +1,4 @@
+open Js_of_ocaml;
 module Mem_store = Irmin_mem.KV(Irmin.Contents.String);
 
 let config = Irmin_mem.config();
@@ -13,27 +14,92 @@ let info = msg => {
   Irmin.Info.v(~date, ~author, msg);
 };
 
-let infof = fmt => Fmt.kstrf((str, ()) => info(str), fmt);
-
-Js_of_ocaml.Js.export(
-  "Irmin",
-  [%js
-    {
-      as _;
-      pub add = (x, y) => x +. y;
-      pub abs = x => abs_float(x);
-      val foo = 8;
-      val zero = 0.
-    }
-  ],
-);
-
 let pp_commit_info = (info: Irmin.Info.t) =>
   Irmin.Info.author(info)
   ++ ": "
   ++ Irmin.Info.message(info)
   ++ ": "
   ++ Int64.to_string(Irmin.Info.date(info));
+
+let infof = fmt => Fmt.kstrf((str, ()) => info(str), fmt);
+
+let js_array_of_list = ls => ls |> Array.of_list |> Js.array;
+
+let convertStrings = ls => ls |> List.map(x => Js.string(x));
+
+let jsStringArrayToStringList = jsArray =>
+  jsArray
+  |> Js.array_map(x => Js.to_string(x))
+  |> Js.to_array
+  |> Array.to_list;
+
+let getBranches = cb =>
+  Lwt.async(() =>
+    Mem_store.Repo.v(config)
+    >>= Mem_store.Branch.list
+    >|= convertStrings
+    >|= js_array_of_list
+    >|= (t => cb(t))
+  );
+
+let set = (key, value, commitMessage, cb) =>
+  Mem_store.Repo.v(config)
+  >>= Mem_store.master
+  >>= (
+    t =>
+      cb(
+        Mem_store.set_exn(
+          t,
+          key |> jsStringArrayToStringList,
+          Js.to_string(value),
+          ~info=infof("%s", Js.to_string(commitMessage)),
+        ),
+      )
+  );
+
+let get = (key, cb) =>
+  Mem_store.Repo.v(config)
+  >>= Mem_store.master
+  >>= (
+    t =>
+      Mem_store.get(t, key |> jsStringArrayToStringList)
+      >|= (value => cb(Js.string(value)))
+  );
+
+let getHistory = cb =>
+  Mem_store.Repo.v(config)
+  >>= Mem_store.master
+  >>= (
+    t =>
+      Mem_store.history(t)
+      >|= (
+        history_res => {
+          let str =
+            Mem_store.History.fold_vertex(
+              (vertex, acc) =>
+                acc
+                ++ " \n "
+                ++ (vertex |> Mem_store.Commit.info |> pp_commit_info),
+              history_res,
+              "",
+            );
+          cb(str |> Js.string);
+        }
+      )
+  );
+
+Js.export(
+  "Irmin",
+  [%js
+    {
+      val getBranches = getBranches;
+      val set = set;
+      val get = get;
+      val getHistory = getHistory;
+      val zero = 0.
+    }
+  ],
+);
 
 let main =
   Mem_store.Repo.v(config)
