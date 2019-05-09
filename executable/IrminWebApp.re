@@ -42,6 +42,17 @@ let getBranches = cb =>
     >|= (t => cb(t))
   );
 
+let newBranch = (branchName, cb) =>
+  Lwt.async(() =>
+    Mem_store.Repo.v(config)
+    >>= Mem_store.master
+    >>= (
+      master =>
+        Mem_store.clone(~src=master, ~dst=Js.to_string(branchName))
+        >|= (tmp => cb(tmp))
+    )
+  );
+
 let set = (key, value, commitMessage, cb) =>
   Mem_store.Repo.v(config)
   >>= Mem_store.master
@@ -93,6 +104,7 @@ Js.export(
   [%js
     {
       val getBranches = getBranches;
+      val newBranch = newBranch;
       val set = set;
       val get = get;
       val getHistory = getHistory;
